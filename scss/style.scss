@@ -33,7 +33,7 @@ a {
 		max-width: 100%;
 	}
 	.toggle-menu {
-		z-index: 9999;	
+		z-index: 9999;
 		position: relative;
 		top: -13px;
 		display: none;
@@ -79,12 +79,12 @@ a {
 						background: $red;
 						transition: .15s width ease;
 					}
-					
+
 					&:hover {
 						&:before {
 							width: 100%;
 						}
-						
+
 					}
 				}
 				&.active {
@@ -137,7 +137,7 @@ a {
 				margin-left: 0px;
 			}
 		}
-		
+
 	}
 	&.navbar-light {
 		.site-logo {
@@ -338,7 +338,7 @@ a {
 		visibility: hidden;
 		top: 40px;
 	}
-	h2 { 
+	h2 {
 		font-weight: normal;
 		margin-bottom: 0;
 		color: $black;
@@ -433,29 +433,29 @@ a {
 			}
 
 		}
-		
+
 	}
-	&:hover, &:focus {
-		.project-hover, .post-hover {
-			visibility: visible;
-			opacity: 1;
-			.project-hover-inner, .post-hover-inner {
-				visibility: visible;
-				opacity: 1;
-				animation-delay: 10s;
-				h2 {
-					opacity: 1;
-					visibility: visible;
-					bottom: 0px;
-				}
-				span {
-					bottom: 0;
-					visibility: visible;
-					opacity: 1;
-				}
-			}
-		}
-	}
+	// &:hover, &:focus {
+	// 	.project-hover, .post-hover {
+	// 		visibility: visible;
+	// 		opacity: 1;
+	// 		.project-hover-inner, .post-hover-inner {
+	// 			visibility: visible;
+	// 			opacity: 1;
+	// 			animation-delay: 10s;
+	// 			h2 {
+	// 				opacity: 1;
+	// 				visibility: visible;
+	// 				bottom: 0px;
+	// 			}
+	// 			span {
+	// 				bottom: 0;
+	// 				visibility: visible;
+	// 				opacity: 1;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 .templateux-footer {
 	padding: 7em 0;
@@ -540,7 +540,7 @@ textarea.form-control {
 	display: block;
 	margin-left: -15px;
 	position: absolute;
-	margin-top: 70px;
+	margin-top: 40px;
 	&:before {
 		width: 2px;
     height: 40px;
@@ -554,7 +554,7 @@ textarea.form-control {
     pointer-events: none;
     top: 0;
     transition: .3s all ease;
-    
+
 	}
 	&:after {
 		content: "";
@@ -630,7 +630,7 @@ textarea.form-control {
 	}
 	&.dots-overlap {
 		.owl-dots {
-			bottom: 50px;	
+			bottom: 50px;
 			position: absolute;
 			z-index: 9;
 			.owl-dot {
@@ -666,10 +666,10 @@ textarea.form-control {
 	padding: 7em 0;
 	background: #f7f7f7;
 	blockquote {
-		font-size: 24px;	
+		font-size: 24px;
 		font-weight: 300;
 		@include media-breakpoint-up(md) {
-			font-size: 30px;	
+			font-size: 30px;
 		}
 		p {
 			color: $black;
@@ -735,7 +735,7 @@ textarea.form-control {
 				&:hover, &:focus {
 					color: $white;
 				}
-			}	
+			}
 		}
 	}
 	.prev {
@@ -863,9 +863,9 @@ textarea.form-control {
 	// padding: 25px;
 	font-size: 15px;
 	width: 100%;
-	
+
 	float: left;
-	
+
 	background: $white;
 	*:last-child {
 		margin-bottom: 0;
@@ -938,4 +938,24 @@ textarea.form-control {
 			margin-bottom: 20px;
 		}
 	}
+}
+
+.templateux-hero h1, .intro h1 { font-size: 60px; }
+
+.templateux-hero, .intro {
+  height: 80vh;
+  min-height: 620px;
+}
+.templateux-footer {
+  padding: 3em 0;
+}
+.project figure {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 75%;
+}
+.mark {
+  background: $primary;
+  color: white;
 }

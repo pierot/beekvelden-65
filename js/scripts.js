@@ -4,4 +4,3 @@
 //@prepros-append aos.min.js
 //@prepros-append scrollax.min.js
 //@prepros-append animsition.min.js
-//@prepros-append owl.carousel.min.js
