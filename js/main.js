@@ -1,7 +1,5 @@
 // AOS
-AOS.init({
-  duration: 1000,
-})
+AOS.init({duration: 1000})
 
 jQuery(document).ready(function ($) {
   "use strict"
