@@ -950,11 +950,19 @@ textarea.form-control {
 .templateux-footer {
   padding: 3em 0;
 }
+.project {
+  cursor: pointer;
+}
+.project:hover figure,
+.project:focus figure {
+  transform: scale(1.05);
+}
 .project figure {
   height: 100%;
   background-size: cover;
   background-position: center center;
   padding-top: 75%;
+  transition: all .5s;
 }
 .mark {
   background: $primary;

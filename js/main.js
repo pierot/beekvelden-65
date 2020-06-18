@@ -72,5 +72,15 @@ jQuery(document).ready(function ($) {
       $(".js-templateux-menu").fadeIn(300)
     }
   })
+
+  document.querySelectorAll(".project").forEach(function (el) {
+    var baseUrl = window.location.protocol + "//" + location.host.split(":")[0]
+
+    el.addEventListener("click", function (e) {
+      var figure = e.currentTarget.querySelector("figure")
+      var imgUrl = figure.style.backgroundImage.slice(4, -1).replace(/"/g, "")
+      window.open(baseUrl + "/" + imgUrl)
+    })
+  })
 })
 
