@@ -74,12 +74,13 @@ jQuery(document).ready(function ($) {
   })
 
   document.querySelectorAll(".project").forEach(function (el) {
-    var baseUrl = window.location.protocol + "//" + location.host.split(":")[0]
+    // var baseUrl = window.location.protocol + "//" + location.host.split(":")[0]
 
     el.addEventListener("click", function (e) {
       var figure = e.currentTarget.querySelector("figure")
       var imgUrl = figure.style.backgroundImage.slice(4, -1).replace(/"/g, "")
-      window.open(baseUrl + "/" + imgUrl)
+      // window.open(baseUrl + "/" + imgUrl)
+      window.open(imgUrl.replace("width/600", "cdn"))
     })
   })
 })

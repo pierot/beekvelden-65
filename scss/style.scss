@@ -941,7 +941,19 @@ textarea.form-control {
 	}
 }
 
-.templateux-hero h1, .intro h1 { font-size: 60px; }
+.templateux-hero h1, .intro h1 {
+  font-size: 60px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 40px;
+  }
+}
+
+.templateux-navbar .site-logo a {
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
+}
 
 .templateux-hero, .intro {
   height: 80vh;
